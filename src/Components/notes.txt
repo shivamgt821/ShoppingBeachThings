@@ -1,0 +1,145 @@
+import React, { useState } from 'react';
+import './GetTheGear.css';
+
+const products1 = [
+  {
+    img: 1,
+    name: 'Kiama Classic Surfboard',
+    price: '$19.99',
+    stars: 3,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F72100-Calm-7%276%5E_000_001.png&fallback=/Products/72100_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 2,
+    name: 'Mindy Print Swimsuit',
+    price: '$29.99',
+    stars: 2,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73513_000_001.png&fallback=/Products/73513_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 3,
+    name: 'Tomeq Snorkel Package',
+    price: '$39.99',
+    stars: 4,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73307-Denim-M_000_001.png&fallback=/Products/73307_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 4,
+    name: 'Paltoni Sandals',
+    price: '$49.99',
+    stars: 5,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73202_000_001.png&fallback=/Products/73202_000_001.png&w=275&h=275&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+];
+const products2 = [
+  {
+    img: 1,
+    name: 'Kiama Classic Surfboard',
+    price: '$19.99',
+    stars: 3,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F72100-Calm-7%276%5E_000_001.png&fallback=/Products/72100_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+];
+const products3 = [
+  {
+    img: 1,
+    name: 'Kiama Classic Surfboard',
+    price: '$19.99',
+    stars: 3,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F72100-Calm-7%276%5E_000_001.png&fallback=/Products/72100_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 2,
+    name: 'Mindy Print Swimsuit',
+    price: '$29.99',
+    stars: 2,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73513_000_001.png&fallback=/Products/73513_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 3,
+    name: 'Tomeq Snorkel Package',
+    price: '$39.99',
+    stars: 4,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73307-Denim-M_000_001.png&fallback=/Products/73307_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+];
+const products4 = [
+  {
+    img: 1,
+    name: 'Kiama Classic Surfboard',
+    price: '$19.99',
+    stars: 3,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F72100-Calm-7%276%5E_000_001.png&fallback=/Products/72100_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+  {
+    img: 2,
+    name: 'Mindy Print Swimsuit',
+    price: '$29.99',
+    stars: 2,
+    imageUrl: 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/stpmsksxpr/imageFileData/search?fileName=/Products%2F73513_000_001.png&fallback=/Products/73513_000_001.png&w=288&h=308&q=80&m=6&f=jpg&cropfocalregion=true',
+  },
+];
+
+const GetTheGear = () => {
+  const productsPerPage = 3; // Number of products to show per page
+  const [startIndex, setStartIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const prevButton = () => {
+    // Calculate the new start index for the previous set of products
+    const newStartIndex = Math.max(startIndex - productsPerPage, 0);
+    setStartIndex(newStartIndex);
+    setCurrentImageIndex(newStartIndex);
+  };
+
+  const nextButton = () => {
+    // Calculate the new start index for the next set of products
+    const newStartIndex = Math.min(startIndex + productsPerPage, products.length - productsPerPage);
+    setStartIndex(newStartIndex);
+    setCurrentImageIndex(newStartIndex);
+  };
+
+  const handleImageChange = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  return (
+    <div className='scroll'>
+      <h2>Get the gear</h2>
+      <div className='align'>
+        {products.slice(startIndex, startIndex + productsPerPage).map((product, index) => (
+          <div key={index} className={`product${index + 1}`}>
+            <img
+              src={product.imageUrl}
+              alt={product.name}
+              className="image"
+              loadfailurebehavior="empty"
+            />
+            <div className="productdetails">
+              <h3>{product.name}</h3>
+              <div className="button-container">
+                {[0, 1, 2].map((buttonIndex) => (
+                  <button
+                    key={buttonIndex}
+                    className={`btn${buttonIndex + 1} ${currentImageIndex === startIndex + buttonIndex ? 'active' : ''}`}
+                    onClick={() => handleImageChange(startIndex + buttonIndex)}
+                  ></button>
+                ))}
+              </div>
+              <p>{product.price}</p>
+              <p>{product.stars} stars</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button className='button-left' onClick={prevButton} disabled={startIndex === 0}>
+        <i className="fa-sharp fa-solid fa-angle-left"></i>
+      </button>
+      <button className='button-right' onClick={nextButton} disabled={startIndex >= products.length - productsPerPage}>
+        <i className="fa-sharp fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  );
+};
+
+export default GetTheGear;

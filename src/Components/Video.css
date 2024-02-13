@@ -1,0 +1,101 @@
+.videos-container {
+  position: relative;
+  overflow: hidden; /* Ensure video and text do not overflow */
+}
+
+.videos-ele {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height of the video container */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 1; 
+  text-align: left;
+  color: white;
+  font-size: Rubik-Bold;
+}
+
+h1 {
+  font-size: 6.5em; 
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-left: -95px;
+  margin-bottom: 60%;
+}
+
+.msc-videoplayer__video {
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+}
+
+/* Optional: Add a box shadow to the video container for depth */
+.videos-container {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.para{
+  font-family: cursive;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  /* text-align-last: right; */
+  position: relative;
+  bottom: 400px;
+  right: 100px;
+}
+
+.text-overlay pre{
+  font-size: 17px;
+  font-family: Rubik-Regular;
+  margin: 0.8px 0px;
+  padding: 0px 20px 0 20px;
+  color: #ffffff;
+  position: relative;
+  bottom: 400px;
+  right: 100px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: auto;
+  margin-top: auto;
+  right: 100px;
+
+}
+.buttonk {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #5c5c5c; /* Set your link color */
+  background-color: #ffffff;
+  border: 2px solid #5c5c5c; /* Set your border color */
+  border-radius: 25px;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  position: relative;
+  bottom: 350px;
+  right: 100px;
+  left: -15%;
+  
+
+  /* Add more styling as needed */
+}
+
+.button:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #3498db; /* Change background color on hover */
+  border-color: #2980b9; /* Change border color on hover */
+}
+
+

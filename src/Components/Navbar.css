@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: #333; /* Add your desired background color */
+  color: #fff; /* Add your desired text color */
+}
+
+.menu-icons {
+  display: flex;
+  position: relative;
+  left: 20px;
+  top: 4px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Your Font Name', sans-serif;
+}
+.search-container {
+  position: relative;
+  
+}
+.search-bar {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+  padding-left: 50px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 30%;
+  transform: translateY(-50%);
+  color: white;
+}
+i{
+  margin: 10px;
+}
+
+.store-locator,
+.sign-in,
+.shopping-bag,
+.site-picker {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.locator-icon,
+.sign-in-icon,
+.bag-icon,
+.site-picker-icon {
+  width: 20px;
+  height: 20px;
+  /* Add background image or icon styles */
+}
+
+.headers{
+  
+  align-items: center;
+  background-color: #2266E3;
+  margin-top: -22px;
+  padding-top: 10px;
+}
+.headers p{
+  text-align: center;
+  color: aliceblue;
+}
+
+.headers a {
+  color: aliceblue;
+}

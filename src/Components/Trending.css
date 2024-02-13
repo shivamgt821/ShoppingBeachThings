@@ -1,0 +1,104 @@
+.scrol{
+
+}
+.scrol h2{
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3;
+    margin-top: 20px;
+    padding-right: 0;
+    text-transform: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+ 
+ .scrol {
+    overflow-x: auto;
+  }
+  
+  .alignes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .product1,
+  .product2,
+  .product3,
+  .product4 {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .msc-main_imagess {
+    width: 275px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+  .btn1,
+  .btn2,
+  .btn3{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px
+  }
+  .product-dtl{
+    margin-top: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .btn-left{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid white;
+    margin-right: 0 2rem;
+    cursor: pointer;
+    border: transparent;
+    
+  }
+  .btn-right{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid white;
+    margin-left: 2rem;
+    cursor: pointer;  
+    border: transparent;
+   
+   
+  }
+  .btn-right i{
+  font-size: 40px;
+  margin-right: 20%;
+  color: #2c262d;
+  }
+  .btn-left i{
+    font-size: 40px;
+    margin-left: 20%;
+    color: #2c262d;
+  }
+
+  .btn-right:hover,
+  .btn-left:hover {
+    background-color: #ffffff; 
+  }
+  
+  .btn-right:hover,
+  .btn-left:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);   
+  }
+  
+.btn-left:disabled,
+.btn-right:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

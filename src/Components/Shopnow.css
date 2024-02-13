@@ -1,0 +1,132 @@
+.product-card {
+    max-width: 300px;
+    margin: 0 5px;
+    transition: box-shadow 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card-strip {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .arrowposition {
+    display: flex;
+    font-size: 3em;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .arrow-button {
+    border-radius: 50%;
+    width: 3rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .arrow-button:hover {
+    background-color: #e8e7e7;
+    color: #120c0c;
+  }
+  
+  /* Custom Button Styles */
+  .custom-button-mindy {
+    position: relative;
+    left: 50px;
+  }
+  
+  .custom-button {
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 400%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-button:hover {
+    color: #ffffff;
+  }
+  
+  .custom-button-mindy1 {
+    background-color: #86bfc8;
+    color: #ffffff;
+    border: 2px solid #86bfc8;
+  }
+  
+  .custom-button-mindy2 {
+    background-color: #96d06a;
+    color: #ffffff;
+    border: 2px solid #7adb34;
+  }
+  
+  .custom-button-mindy3 {
+    background-color: #36a1f2;
+    color: #ffffff;
+    border: 2px solid #36a1f2;
+  }
+  
+  .custom-button-mindy2_1 {
+    background-color: #dcb4bc;
+    color: #ffffff;
+    border: 2px solid #dcb4bc;
+  }
+  
+  .custom-button-mindy3_1 {
+    background-color: #147fc8;
+    color: #ffffff;
+    border: 2px solid #147fc8;
+  }
+  
+  .custom-button-mindy3_2 {
+    background-color: #7cf14c;
+    color: #ffffff;
+    border: 2px solid #7cf14c;
+  }
+  
+  .custom-button-mindy3_3 {
+    background-color: #f5001a;
+    color: #ffffff;
+    border: 2px solid #f5001a;
+  }
+  
+  .custom-button-mindy4_1 {
+    background-color: rgb(0, 106, 245);
+    color: #ffffff;
+    border: 2px solid #3498db;
+  }
+  
+  .custom-button-mindy4_2 {
+    background-color: #fd9de5;
+    color: #ffffff;
+    border: 2px solid #fd9de5;
+  }
+  
+  /* h2css */
+  .productmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+  }
+  
