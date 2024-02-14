@@ -1,20 +1,16 @@
-import React from 'react';
-import './Video.css';
+import React from "react";
+import "./Video.css";
 
 const Video = () => {
   return (
-    <div className='videos-container'>
-      <div className='videos-ele'>
-        {/* Add text on the left side of the video */}
+    <div className="videos-container">
+      <div className="videos-ele">
         <div className="text-overlay">
           <h1>Sunrise Sessions</h1>
-          <p className='para'>Kiana anderson</p>
-          <pre>Pro surfer | Read her story</pre>
-          <button className='buttonk'>SHOP SURFBOARDS</button>
-          
+          <p className="videos-container-para">Kiana anderson</p>
+          <pre>Pro surfer    |    Read her story</pre>
+          <button className="buttonk">SHOP SURFBOARDS</button>
         </div>
-
-        {/* The video element */}
         <video
           className="msc-videoplayer__video"
           preload="auto"

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import adventure from './Assests/Adventure_Works_Title.png'
+import adventure from '../Assests/Adventure_Works_Title.png'
 
 
 const Navbar = () => {

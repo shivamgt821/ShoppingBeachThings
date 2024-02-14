@@ -12,9 +12,10 @@ const GrandCoastCollection = () => {
             <h1>Grand Coast</h1>
             <span className='col-12'>Collection</span>
             <p>Monica Thompson</p>
-            <pre>Pro surfer | Read her story</pre>
+            <pre>Pro surfer    |    Read her story</pre>
+            <button>GET THE LOOK</button>
           </div>
-          <button className='buttonz'>GET THE LOOK</button>
+         
         </div>
       </div>
     </div>

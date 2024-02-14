@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+;
 .videos-container {
   position: relative;
   overflow: hidden; /* Ensure video and text do not overflow */
@@ -13,22 +16,25 @@
 
 .text-overlay {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 60%;
+  left: 5%;
   transform: translateY(-50%);
   z-index: 1; 
   text-align: left;
   color: white;
   font-size: Rubik-Bold;
+  height: 70vh;
+  width: 55%;
+
 }
 
-h1 {
+.text-overlay h1 {
   font-size: 6.5em; 
   font-weight: bold;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  margin-left: -95px;
   margin-bottom: 60%;
+  
 }
 
 .msc-videoplayer__video {
@@ -42,39 +48,34 @@ h1 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.para{
+.videos-container-para{
   font-family: cursive;
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
-  /* text-align-last: right; */
   position: relative;
-  bottom: 400px;
-  right: 100px;
+  bottom: 450px;
+  font-family: "Beth Ellen", cursive;
 }
 
 .text-overlay pre{
   font-size: 17px;
-  font-family: Rubik-Regular;
+  font-family: "Rubik", sans-serif;
   margin: 0.8px 0px;
   padding: 0px 20px 0 20px;
   color: #ffffff;
   position: relative;
-  bottom: 400px;
-  right: 100px;
+  bottom: 450px;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: auto;
-  margin-top: auto;
-  right: 100px;
+  right: 1rem;
+  
 
 }
 .buttonk {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
-  
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -84,12 +85,9 @@ h1 {
   border-radius: 25px;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   position: relative;
-  bottom: 350px;
-  right: 100px;
-  left: -15%;
+  bottom: 400px;
+  width: 16rem;
   
-
-  /* Add more styling as needed */
 }
 
 .button:hover {

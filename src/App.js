@@ -1,32 +1,32 @@
 import './App.css';
-import AdventureNext from './Components/AdventureNext';
-import DailyActivity from './Components/DailyActivity';
-import EcoWorksSurf from './Components/EcoWorksSurf';
-import Footer from './Components/Footer';
-import Footermain from './Components/Footermain';
-import GetTheGear from './Components/GetTheGear';
-import GrandCoastCollection from './Components/GrandCoastCollection';
-import Navbar from './Components/Navbar';
-import NewArrivals from './Components/NewArrivals';
+import Footer from './Components/Footer/Footer';
+import Footermain from './Components/Footer/Footermain';
+import AdventureNext from './Components/MainComponents/AdventureNext';
+import DailyActivity from './Components/MainComponents/DailyActivity';
+import EcoWorksSurf from './Components/MainComponents/EcoWorksSurf';
+import GrandCoastCollection from './Components/MainComponents/GrandCoastCollection';
+import Trending from './Components/MainComponents/Trending';
+import NewArrivals from './Components/MainComponents/NewArrivals';
+import Navbar from './Components/Navbar/Navbar';
 import Space from './Components/Space';
-import StylingBagPacks from './Components/StylingBagPacks';
-import Trending from './Components/Trending';
 import Video from './Components/Video';
+import GetTheGear from './Components/MainComponents/GetTheGear';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Video />
-      <GetTheGear />
+      <Navbar/>
+      <Video/>
+      <GetTheGear/>
       <DailyActivity />
       <Space />
       <AdventureNext />
-      <Space />
+      <Space/>
       <EcoWorksSurf />
       <GrandCoastCollection />
       <Space />
-      <NewArrivals />
+      <NewArrivals/>
       <Space />
       <Trending />
       <Space />
